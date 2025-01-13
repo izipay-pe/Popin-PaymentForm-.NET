@@ -68,16 +68,11 @@ Reemplace **[CHANGE_ME]** con sus credenciales de `API REST` extraídas desde el
 
 ### Ejecutar proyecto
 
-1. Una vez dentro del código ejecutamos el proyecto con el comando F5, se abrirá en tu navegador predeterminado y accedera en la siguiente ruta:
+1. Una vez dentro del código ejecutamos el proyecto con el comando F5 y se abrirá en tu navegador predeterminado accediendo a la siguiente ruta:
 
 ```sh
 https://localhost:7095/
 ``` 
-
-<p align="center">
-  <img src="https://i.postimg.cc/Bb11T1J7/ejecutarproyecto.jpg" alt="Formulario" width="350"/>
-</p>
-
 
 ## 🔗4. Pasos de integración
 
