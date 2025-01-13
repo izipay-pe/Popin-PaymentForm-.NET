@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Checkout";
+}
+
+@section extrahead {
+    <script type="text/javascript"
+            src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js"
+            kr-public-key="@ViewData["PublicKey"]"
+            kr-post-url-success="result">
+    </script>
+    <link rel="stylesheet" href="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic.css">
+    <script type="text/javascript" src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic.js"></script>
+}
+
+@section extrastyles {
+}
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="center-column col-md-6">
+            <section class="payment-form">
+                <div class="row">
+                    <li>Pago con tarjeta de crédito/débito</li>
+                    <img src="https://github.com/izipay-pe/Imagenes/blob/main/logo_tarjetas_aceptadas/logo-tarjetas-aceptadas-351x42.png?raw=true" alt="Tarjetas aceptadas" style="width: 200px;">
+                </div>
+                <hr>
+                <div id="micuentawebstd_rest_wrapper">
+                    <div class="kr-embedded" kr-popin kr-form-token="@ViewData["FormToken"]"></div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</section>
+
+@section extrajs {
+    <script>
+    </script>
+}
